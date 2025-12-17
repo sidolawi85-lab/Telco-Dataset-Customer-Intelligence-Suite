@@ -1,2 +1,65 @@
-# Telco-Dataset-Customer-Intelligence-Suite
-Strategic Power BI analytics for Churn Mitigation and Revenue Growth.
+# 📊 Telco Customer Intelligence Suite
+### *Strategic Analytics for Churn Mitigation & Revenue Growth*
+
+![Banner](https://img.shields.io/badge/Power_BI-Professional-yellow?style=for-the-badge&logo=powerbi) 
+![Status](https://img.shields.io/badge/Project-Portfolio_Complete-success?style=for-the-badge)
+![Data](https://img.shields.io/badge/Dataset-7k+_Subscribers-blue?style=for-the-badge)
+
+---
+
+## 🚀 Business Problem
+The organization faced a critical **26.5% Churn Rate**. While acquisition volume was steady, the high attrition rate among "Month-to-Month" subscribers was creating a "leaky bucket" effect, destabilizing Monthly Recurring Revenue (MRR).
+
+**The Objective:** Build a diagnostic tool to identify high-risk segments, calculate customer health scores, and provide a strategic roadmap for retention.
+
+---
+
+## 💡 Key Features & Logic
+This project goes beyond basic reporting by implementing custom business logic via **Advanced DAX**:
+
+* **Executive Health Scoring:** Proprietary algorithms for **Growth Index (5.6/10)** and **Retention Score (7.3/10)** to provide instant executive clarity.
+* **Snapshot-Aware MRR:** Reconstructed historical revenue curves from static data using time-travel DAX filters.
+* **Behavioral Segmentation:** Identified the **"6-Month Churn Cliff"** using tenure distribution analysis.
+* **Risk Quantification:** Calculated the financial exposure of "At-Risk" revenue to prioritize intervention spend.
+
+---
+
+## 🎨 Dashboard Previews
+
+### 1. Acquisition & Growth (The Green Strategy)
+*Focuses on New MRR Velocity and High-Value Customer Acquisition.*
+
+
+### 2. Retention & Risk (The Purple Strategy)
+*Focuses on Churn Prevention and Contract Stability.*
+
+![Acquisition]()
+---
+
+## 🛠️ Technical Stack
+* **Power BI:** Data Modeling, DAX Engineering, and UX/UI Design.
+* **GIMP:** Professional asset creation and high-resolution export processing.
+* **Excel/CSV:** Raw data source (Telco Customer Dataset).
+* **n8n (In Progress):** Automated alerting workflows triggered by KPI thresholds.
+
+---
+
+## 📈 Strategic Insights
+* **The Tenure Trap:** Customers are 4x more likely to churn in their first 6 months.
+* **Contract Power:** Moving 10% of users from Monthly to 1-Year contracts yields a projected 15% increase in MRR stability.
+* **Service Gap:** Fiber Optic users show the highest ARPU but the fastest churn, indicating a service-quality mismatch.
+
+---
+
+## 📂 Project Structure
+* `_data/`: Cleaned dataset.
+* `_src/`: [DAX Library](logic/measures.md) containing custom measures.
+* `_exports/`: High-resolution PDF report and PNG snapshots.
+
+---
+
+## 👤 Author
+**Sidney Lawi** *Data Analytics & Business Intelligence* [LinkedIn Profile](https://www.linkedin.com/in/your-profile-link) | [Portfolio Site](https://your-portfolio-link.com)
+
+---
+*Created as part of the Telco Retention Project - December 2025*
