@@ -1,0 +1,81 @@
+Type logic/measures.md.   DAX Library: Telco Customer Intelligence
+
+1. Retention Health Score (Weighted)
+Code snippet
+/* MEASURE: Retention Health Score (Weighted)
+   LOGIC: Calculates a risk score (0-10) based on three weighted factors:
+   1. Churn Rate (60% weight) - Inverted so low churn = high score.
+   2. Long-Term Contract Adoption (20% weight).
+   3. Average Tenure (20% weight) - Normalized against a 72-month cap.
+*/
+Retention Health Score = 
+VAR ChurnRate = [Churn Rate %]
+VAR LongTermShare = 
+    DIVIDE(
+        CALCULATE(COUNT('Fact_Customer'[Customer ID]), 'Fact_Customer'[Contract] <> "Month-to-month"),
+        COUNT('Fact_Customer'[Customer ID])
+    )
+VAR AvgTenureNormalized = DIVIDE(AVERAGE('Fact_Customer'[tenure]), 72)
+
+-- Weighted Calculation
+VAR RawScore = ( (1 - ChurnRate) * 0.6 + (LongTermShare * 0.2) + (AvgTenureNormalized * 0.2) ) * 10
+
+RETURN
+ROUND(RawScore, 1)
+
+2. MRR Base (Cumulative Growth)
+Code snippet
+/*
+   MEASURE: MRR Base (Cumulative)
+   LOGIC: Solves the "Snapshot Problem" by calculating the sum of Monthly Charges 
+   for all customers who joined on or before the current context date.
+*/
+MRR Base = 
+CALCULATE(
+    SUM('Fact_Customer'[MonthlyCharges]),
+    FILTER(
+        ALL('Fact_Customer'), -- Removes existing filters to scan the whole table
+        'Fact_Customer'[Join Date] <= MAX('Dim_Date'[Date]) -- Keeps only customers active by this date
+    )
+)
+
+3. Growth Health Label
+Code snippet
+/*
+   MEASURE: Growth Index Label
+   LOGIC: Creates a dynamic text card that displays a title and a formatted score.
+   UNICHAR(10) acts as a line break to stack the text vertically.
+*/
+Growth Health Label = 
+"Growth Health Score" & UNICHAR(10) & 
+FORMAT([Growth Momentum Index], "0.0") & " / 10"
+
+4. MRR at Risk %
+Code snippet
+/*
+   MEASURE: MRR at Risk %
+   LOGIC: Calculates the percentage of Total Monthly Recurring Revenue (MRR) 
+   held by customers on volatile "Month-to-month" contracts.
+*/
+MRR at Risk % = 
+DIVIDE(
+    CALCULATE(
+        SUM('Fact_Customer'[MonthlyCharges]), 
+        'Fact_Customer'[Contract] = "Month-to-month"
+    ),
+    SUM('Fact_Customer'[MonthlyCharges]),
+    0
+)
+
+5. Estimated LTV (Customer Lifetime Value)
+Code snippet
+/*
+   MEASURE: Estimated LTV
+   LOGIC: Projects the total revenue value of an average customer by multiplying 
+   Average Revenue Per User (ARPU) by the Average Tenure (Lifespan).
+*/
+Estimated LTV = 
+VAR AvgRevenue = [ARPU] -- Reference to the ARPU measure
+VAR AvgLifespan = AVERAGE('Fact_Customer'[tenure])
+RETURN
+AvgRevenue * AvgLifespan
