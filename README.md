@@ -29,11 +29,11 @@ This project goes beyond basic reporting by implementing custom business logic v
 ### 1. Acquisition & Growth (The Green Strategy)
 *Focuses on New MRR Velocity and High-Value Customer Acquisition.*
 
-![Acquisition](dashboard-growth)
+![Acquisition](dashboard-growth.png)
 
 ### 2. Retention & Risk (The Purple Strategy)
 *Focuses on Churn Prevention and Contract Stability.*
-![Retention](dashboard-retention)
+![Retention](dashboard-retention.png)
 
 ---
 
