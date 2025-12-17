@@ -33,7 +33,7 @@ This project goes beyond basic reporting by implementing custom business logic v
 
 ### 2. Retention & Risk (The Purple Strategy)
 *Focuses on Churn Prevention and Contract Stability.*
-![Retention]()
+![Retention](https://github.com/sidolawi85-lab/Telco-Dataset-Customer-Intelligence-Suite/blob/main/Telco%20Data%20Set%20BI%20Project%202025/DashBoards%20Screenshots/dashboard-retention.png?raw=true)
 
 ---
 
