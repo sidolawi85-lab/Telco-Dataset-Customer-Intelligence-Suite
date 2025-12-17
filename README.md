@@ -29,11 +29,12 @@ This project goes beyond basic reporting by implementing custom business logic v
 ### 1. Acquisition & Growth (The Green Strategy)
 *Focuses on New MRR Velocity and High-Value Customer Acquisition.*
 
+![Acquisition](dashboard-growth)
 
 ### 2. Retention & Risk (The Purple Strategy)
 *Focuses on Churn Prevention and Contract Stability.*
+![Retention](dashboard-retention)
 
-![Acquisition]()
 ---
 
 ## 🛠️ Technical Stack
@@ -59,7 +60,7 @@ This project goes beyond basic reporting by implementing custom business logic v
 ---
 
 ## 👤 Author
-**Sidney Lawi** *Data Analytics & Business Intelligence* [LinkedIn Profile](https://www.linkedin.com/in/your-profile-link) | [Portfolio Site](https://your-portfolio-link.com)
+**Sidney Lawi** *Data Analytics & Business Intelligence* [LinkedIn Profile](www.linkedin.com/in/sidneylawi-bi-consultant) | [Portfolio Site](https://www.linkedin.com/posts/sidneylawi-bi-consultant_identifying-churn-risk-and-stabilizing-telco-activity-7406963577795923969-tyez?utm_source=share&utm_medium=member_desktop&rcm=ACoAAEHQrKAB1uvYCcKs-1p4oRMD_LFVmcDtwm4)
 
 ---
 *Created as part of the Telco Retention Project - December 2025*
