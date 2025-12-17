@@ -26,8 +26,10 @@ This project goes beyond basic reporting by implementing custom business logic v
 
 ## 🎨 Dashboard Previews
 
+## 🎨 Dashboard Previews
+
 ### 1. Acquisition & Growth (The Green Strategy)
-*Focuses on New MRR Velocity and High-Value Customer Acquisition.*
+
 
 ![Acquisition](dashboard-growth.png)
 
