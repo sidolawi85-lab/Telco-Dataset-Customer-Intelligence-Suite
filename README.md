@@ -53,6 +53,8 @@ This project goes beyond basic reporting by implementing custom business logic v
 ---
 
 ## 📂 Project Structure
+[View Executive Summary (PDF)](https://github.com/sidolawi85-lab/Telco-Dataset-Customer-Intelligence-Suite/blob/main/Telco%20Data%20Set%20BI%20Project%202025/Dashboard%20pdf%20files/Telco%20data%20Churn%20Analysis%20dashboard.pdf)
+https://github.com/sidolawi85-lab/Telco-Dataset-Customer-Intelligence-Suite/blob/main/Telco%20Data%20Set%20BI%20Project%202025/Dashboard%20pdf%20files/Telco%20data%20Churn%20Analysis%20dashboard.pdf
 * `_data/`: Cleaned dataset.
 * `_src/`: [DAX Library](logic/measures.md) containing custom measures.
 * `_exports/`: High-resolution PDF report and PNG snapshots.
