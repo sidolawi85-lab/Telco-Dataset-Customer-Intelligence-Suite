@@ -24,18 +24,16 @@ This project goes beyond basic reporting by implementing custom business logic v
 
 ---
 
-## 🎨 Dashboard Previews
-
-## 🎨 Dashboard Previews
+## 🎨 Dashboard Preview
 
 ### 1. Acquisition & Growth (The Green Strategy)
 
 
-![Acquisition](dashboard-growth.png)
+![Acquisition](https://github.com/sidolawi85-lab/Telco-Dataset-Customer-Intelligence-Suite/blob/main/Telco%20Data%20Set%20BI%20Project%202025/DashBoards%20Screenshots/dashboard-growth.png?raw=true)
 
 ### 2. Retention & Risk (The Purple Strategy)
 *Focuses on Churn Prevention and Contract Stability.*
-![Retention](dashboard-retention.png)
+![Retention]()
 
 ---
 
